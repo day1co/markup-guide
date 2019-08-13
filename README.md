@@ -125,7 +125,7 @@ IE 브라우저 호환 설정, `IE=edge` 값으로 최신 버전으로 동작
 
 (HTML 5.2 W3C Recommendation)
 
-## Attribute
+## Attributes
 
 속성(attr)은 `""` 큰따옴표 적용 사용
 
@@ -135,6 +135,11 @@ IE 브라우저 호환 설정, `IE=edge` 값으로 최신 버전으로 동작
 2. `id`, `class`
 3. `alt`, `title`
 4. `role`, `data-*`, `aria-*`
+
+```html
+<input for="id" id="input-id" class="input__class" ... />
+<button type="button" id="button-id" class="btn__class" .../>
+```
 
 ## Boolean attributes
 
