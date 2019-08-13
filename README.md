@@ -57,8 +57,6 @@ TOC
   * [Hiding content](#hiding-content)
 - [Code Fomatting](#code-fomatting)
   * [Editconfig](#editconfig)
-  * [Code style](#code-style)
-  * [Stylelint](#stylelint)
 ------
 
 # Global Rules
@@ -748,21 +746,6 @@ indent_style = space
 max_line_length = 120
 trim_trailing_whitespace = true
 ```
-
-## Code style
-
-포맷 자동화가 가능한 공용으로 사용 가능한 방법을 찾는 중..
-
-prettier: (mac) shift + alt + command + P
-
-refomat code: (mac) alt + command + L
-
-## Stylelint
-
-[Stylelint](https://www.npmjs.com/package/stylelint)...
-
-[▲ 목차로 돌아가기](#TOC)
-
 ------
 [Code Guide by @mdo](http://codeguide.co/) 기반으로 [레진 마크업 가이드](https://github.com/lezhin/markup-guide/blob/master/README.md)를 참고하였습니다.
 
