@@ -371,9 +371,9 @@ HTML 구문 중  <, >, ", ', & 특수 문자는 HTML Character Entity 로 대체
 ```scss
 // bad
 .btn,.btn--sm,.btn--lg{ // 규칙 선언
-  margin:10px 0 0 0; // 속성 선언
-  border-width:0px;
-  padding: 0 10px 0 10px;
+  margin:1rem 0 0 0; // 속성 선언
+  border-width:.0rem;
+  padding: 0 1rem 0 1rem;
   background-color:rgba(0,0,0,0.5);
   background-image:url(url);
   color:#FFFF00;
@@ -383,10 +383,10 @@ HTML 구문 중  <, >, ", ', & 특수 문자는 HTML Character Entity 로 대체
 .btn,
 .btn--sm,
 .btn--lg {
-  margin-top: 10px;
+  margin-top: 1rem;
   border-width: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: rgba(0, 0, 0, .5);
   background-image: url('url');
   color: #ff0;
@@ -395,10 +395,13 @@ HTML 구문 중  <, >, ", ', & 특수 문자는 HTML Character Entity 로 대체
 
 ## Declaration
 
-요소의 레이아웃, 타이포그래피, 기타 순서로 작성하고 그 중 축약을 지원하는 속성은 축약 순서로 선언
+요소의 믹스엔, 레이아웃, 타이포그래피, 기타 순서로 작성하고 그 중 축약을 지원하는 속성은 축약 순서로 선언
 
 ```scss
 .element {
+  /* mixin */
+  @include transition();
+
   /* Position */
   position: absolute;
   top: 0;
@@ -429,7 +432,6 @@ HTML 구문 중  <, >, ", ', & 특수 문자는 HTML Character Entity 로 대체
   background: #f00 url('url') no-repeat center center cover;
   opacity: 1;
   transform: translate(50%, 50%);
-  transition: all 2s ease-out;
 }
 ```
 
@@ -500,7 +502,7 @@ Mobile First, Module 단위로 코드 작성
 
 ## Mixin
 
-`@include` 는 속성 선언의 하단에 작성
+`@include` 는 속성 선언의 상단에 작성
 
 ```scss
 .element {
